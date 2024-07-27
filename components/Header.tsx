@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import Navigation from "./Navigation";
+import MobileNavigation from "./MobileNavigation";
 
 type Props = {};
 
@@ -21,7 +22,9 @@ const Header = (props: Props) => {
             <Button>Hire Me</Button>
           </Link>
         </div>
-        <div className="flex xl:hidden items-center gap-8">mobile nav</div>
+        <div className="xl:hidden">
+          <MobileNavigation />
+        </div>
       </div>
     </header>
   );
