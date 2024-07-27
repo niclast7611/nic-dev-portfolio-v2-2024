@@ -138,7 +138,7 @@ const Work = (props: Props) => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px] mb-12"
+              className="h-[300px] sm:h-[400px] xl:h-[520px]"
               onSlideChange={handleSlideChange}
             >
               {projects.map((item, index) => (
@@ -146,7 +146,7 @@ const Work = (props: Props) => {
                   key={index}
                   className="h-[460px] relative group flex justify-center items-center bg-pink-50/20"
                 >
-                  <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10" />
+                  <div className="absolute inset-0 bg-black/10 z-10" />
                   <div className="h-full w-full relative">
                     <Image
                       src={item.image}
